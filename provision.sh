@@ -5,6 +5,8 @@ apt-get update --yes
 apt-get --yes install software-properties-common
 apt-get --yes install ruby2.4
 apt-get --yes install ruby2.4-dev
+apt-get --yes install nginx
+
 gem install bundler
 cd /vagrant
 bundle install
