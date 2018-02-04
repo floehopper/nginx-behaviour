@@ -7,6 +7,9 @@ apt-get --yes install ruby2.4
 apt-get --yes install ruby2.4-dev
 apt-get --yes install nginx
 
+sudo sed -i '/\[Unit\]/a StartLimitInterval=0' /lib/systemd/system/nginx.service
+sudo systemctl daemon-reload
+
 gem install bundler
 cd /vagrant
 bundle install
